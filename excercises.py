@@ -13,3 +13,27 @@ print (verbs)
 print("Write the correct verb in spanish for 'Walk'")
 verbs['Walk']= input()
 print (verbs)
+def operation():
+   result = 0
+   firstNumber = int(input("Write the first number"))
+   secondNumber = int(input("Write the second number"))
+   operand = input("Write the operand")
+   if operand == '+':
+     result = firstNumber+secondNumber
+     print("The result of the sum is: ", result)
+   elif operand == '-':
+     result = firstNumber-secondNumber
+     print("The result of the subtraction is: ", result)
+   elif operand == '*':
+     result = firstNumber*secondNumber
+     print("The result of the multiplication is: ", result)
+   elif operand == '/':
+     result = firstNumber/secondNumber
+     print("The result of the division is: ", result)
+   else:
+     print("That is not a valid operand")
+print("Do you want to do an aritmetic operation?(say yes please)")
+if input() == 'yes':
+   operation()
+else:
+   print("Ok we are done")
